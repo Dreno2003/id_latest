@@ -22,7 +22,7 @@ function Hero() {
             </span>
           </p>
 
-          <p className="mt-2 md:text-lg lg:text-xl md:mt-3">
+          <p className="mt-2 md:text-lg lg:text-xl xl:text-3xl hidden md:mt-3">
             I just get the <strong>hard</strong> stuff <strong>done</strong> to
             make you happi, and make money in the <strong>web3 space.</strong>
           </p>
