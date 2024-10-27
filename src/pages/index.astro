@@ -1,14 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/hero-section';
-import Header from '../components/header';
-import '../styles/global.css'
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/hero-section";
+import Header from "../components/header";
+import "../styles/global.css";
+import PortfolioSection from "../components/portfolio-section.tsx";
+import { SendmailCTASection } from "../components/sendmail-cta-section.tsx";
+import PersonalProject from "../components/personal-project";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<Header client:load />
-		<Hero />
-	</main>
+  <main>
+    <Header client:load />
+    <Hero />
+    <PortfolioSection />
+    <PersonalProject />
+    <SendmailCTASection />
+  </main>
 </Layout>
-

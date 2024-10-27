@@ -7,7 +7,7 @@ function Hero() {
   return (
     <div className="px-10 flex justify-center lg:px-20  items-cen/ter flex-col h-[75vh] overflow-hidden">
       <main className="">
-        <p className="text-lg md:text-xl font-medium mb-2">
+        <p className="text-lg md:text-xl lg:text-2xl font-medium mb-2 md:mb-3">
           {/* salute start  */}
           Hi there, I'm Id!
         </p>
