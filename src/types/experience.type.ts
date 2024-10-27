@@ -1,7 +1,7 @@
 interface PortfolioSectionCardProps {
-  title: string;
-  description: string;
-  date: string;
+  title?: string;
+  description?: string;
+  date?: string;
   stacks?: string[];
 }
 

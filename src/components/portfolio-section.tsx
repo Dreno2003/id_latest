@@ -2,6 +2,11 @@ import { useState } from "react";
 import { FaTeamspeak } from "react-icons/fa";
 import PortfolioSectionCard from "./portfolio-section-card";
 import { experiences } from "../data/experiences.data";
+import {
+  SpotlightCard,
+  SpotLightItem,
+  Spotlight,
+} from "./animated-components/spot-light-card";
 function PortfolioSection() {
   const [expanded, setExpanded] = useState(false);
 
@@ -20,7 +25,9 @@ function PortfolioSection() {
           </p>
         </div>
 
-        <div className="flex justify-center mt-10 flex-col items-center">
+        {/* <Spotlight className="grid gap-2 grid-flow-col grid-cols-4">
+          <SpotLightItem> */}
+        <div className="flex justify-center space-y-8 mt-10 flex-col items-center">
           {experiences.map((experience) => (
             <PortfolioSectionCard
               key={experience.title}
@@ -31,6 +38,13 @@ function PortfolioSection() {
             />
           ))}
         </div>
+
+         <PortfolioSectionCard
+            
+            />
+        {/* </SpotLightItem>
+        </Spotlight> */}
+        {/* <SpotlightCard className="h-[10rem]">dzdfsfd</SpotlightCard> */}
       </main>
     </div>
   );
