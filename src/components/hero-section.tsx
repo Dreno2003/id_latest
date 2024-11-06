@@ -5,17 +5,17 @@ function Hero() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="px-10 flex justify-center lg:px-20  items-cen/ter flex-col h-[75vh] overflow-hidden">
-      <main className="">
+    <div className="px-10 flex jdustify-center lg:px-20  items-cen/ter flex-col h-[100dvh] overflow-hidden">
+      <main className="pt-[10rem]">
         <p className="text-lg md:text-xl lg:text-2xl font-medium mb-2 md:mb-3">
           {/* salute start  */}
-          Hi there, I'm Id!
+          Hi there, I'm Id
         </p>
 
         <div>
           {/* line */}
 
-          <p className="text-gray-900 text-4xl md:text-5xl lg:max-w-6xl xl:max-w-[86rem] xl:text-[5.8rem] lg:text-7xl font-bold">
+          <p className="text-gray-900 text-4xl md:text-5xl lg:max-w-6xl xl:max-w-[86rem] xl:text-[5rem] lg:text-7xl font-bold">
             I'm , a Block Chain Developer living in Nigeria, and{" "}
             <span className="text-gray-500">
               I focus on making digital experiences that are easy to use.

@@ -1,9 +1,4 @@
 import type { PortfolioSectionCardProps } from "../types/experience.type";
-import {
-  SpotlightCard,
-  SpotLightItem,
-  Spotlight,
-} from "./animated-components/spot-light-card";
 
 import { cn } from "../utils/cn.utils";
 import React, { type MouseEvent, useRef, useState } from "react";

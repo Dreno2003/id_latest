@@ -5,15 +5,15 @@ import Header from "../components/header";
 import "../styles/global.css";
 import PortfolioSection from "../components/portfolio-section.tsx";
 import { SendmailCTASection } from "../components/sendmail-cta-section.tsx";
-import PersonalProject from "../components/personal-project";
+import Contact from "../components/contact.tsx";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main>
-    <Header client:load />
-    <Hero />
-    <PortfolioSection client:load />
-    <PersonalProject client:load />
-    <SendmailCTASection />
-  </main>
+<main>
+<Header client:load />
+<Hero />
+<PortfolioSection client:load />
+<Contact client:load />
+
+</main>
 </Layout>
