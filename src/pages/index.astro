@@ -6,14 +6,16 @@ import "../styles/global.css";
 import PortfolioSection from "../components/portfolio-section.tsx";
 import { SendmailCTASection } from "../components/sendmail-cta-section.tsx";
 import Contact from "../components/contact.tsx";
+import { AnimatedSection } from "../components/scroll-animated-section";
 ---
 
 <Layout title="Welcome to Astro.">
-<main>
-<Header client:load />
-<Hero />
-<PortfolioSection client:load />
-<Contact client:load />
+  <main>
+    <Header client:load />
+    <Hero client:load/>
+    <PortfolioSection client:load />
+    <Contact client:load />
+    <!-- <AnimatedSection client:load /> -->
 
-</main>
+  </main>
 </Layout>

@@ -28,9 +28,9 @@ function PortfolioSection() {
         {/* <Spotlight className="grid gap-2 grid-flow-col grid-cols-4">
           <SpotLightItem> */}
         <div className="flex justify-center space-y-8 mt-10 flex-col items-center">
-          {experiences.map((experience) => (
+          {experiences.map((experience, index) => (
             <PortfolioSectionCard
-              key={experience.title}
+              key={index}
               title={experience.title}
               description={experience.description}
               date={experience.date}
@@ -39,9 +39,7 @@ function PortfolioSection() {
           ))}
         </div>
 
-         <PortfolioSectionCard
-            
-            />
+        <PortfolioSectionCard />
         {/* </SpotLightItem>
         </Spotlight> */}
         {/* <SpotlightCard className="h-[10rem]">dzdfsfd</SpotlightCard> */}

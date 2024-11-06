@@ -1,6 +1,4 @@
 import type { PortfolioSectionCardProps } from "../types/experience.type";
-
-import { cn } from "../utils/cn.utils";
 import React, { type MouseEvent, useRef, useState } from "react";
 function PortfolioSectionCard({
   title,
