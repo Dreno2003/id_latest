@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* @font-face {
     font-family: "GtSuper";
@@ -14,9 +17,37 @@
         format("woff"),
       url("/public/media/fonts/gt-super/GT-Super-Display-Super.ttf")
         format("truetype");
+        
     font-weight: normal;
     font-style: normal;
   } */
+
+/* .custom-cursor {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+
+  .cursor-trailer {
+  width: 30px;
+  height: 30px;
+  background:  rgba(78, 78, 78, 0.089);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all .002s ease-out;
+} */
+
+/* Hide default cursor */
+* {
+  cursor: auto !important;
+}
 
 @layer base {
   * {
@@ -28,12 +59,11 @@
   }
   body {
     @apply text-slate-800;
+    transition: scroll-behavior 0.5s ease;
   }
 }
 
-
-
-/* From Uiverse.io by MikeAndrewDesigner */ 
+/* From Uiverse.io by MikeAndrewDesigner */
 .e-card {
   margin: 100px auto;
   background: transparent;
@@ -54,7 +84,7 @@
   top: 0;
   margin-left: -50%;
   margin-top: -70%;
-  background: linear-gradient(744deg,#000000,#030208 60%,#0a0a0a);
+  background: linear-gradient(744deg, #000000, #030208 60%, #0a0a0a);
   /* background: linear-gradient(744deg,#000000,#5b42f3 60%,#00ddeb); */
 }
 
