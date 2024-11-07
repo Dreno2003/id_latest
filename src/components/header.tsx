@@ -15,8 +15,8 @@ import {
   PopoverPanel,
   TransitionChild,
 } from "@headlessui/react";
-import { SendHorizontal } from "lucide-react";
-import { AlignJustify } from "lucide-react";
+// import { SendHorizontal } from "lucide-react";
+// import { AlignJustify } from "lucide-react";
 // import { Tally2 } from "lucide-react";
 import { RiMenu5Fill } from "react-icons/ri";
 
@@ -67,16 +67,11 @@ const products = [
     icon: ArrowPathIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   function handleOpenMobileNav() {
-    console.log("this is called");
     setMobileMenuOpen(true);
   }
 
@@ -84,28 +79,26 @@ export default function Header() {
     <header className="bg-white">
       <nav
         aria-label="Global"
-        className="mx-auto flex containemr lg:px-20 max-ws-7xl items-center justify-between p-6 px-10"
+        className="mx-auto flex containemr fixed z-40 w-full lg:px-20 max-ws-7xl items-center justify-between p-6 px-10"
       >
-        <div className="flex lg:flex-1 ">
-          <h3 className="text-4xl font-bold">ID</h3>
-        </div>
+        <div className="flex lg:flex-1 "> </div>
 
         <div className=" md:flex group w-auto   gap-x-5 lg:flex-b1 lg:justify-end">
-          <button className="text-sm hidden group-hover:text-white group-hover:bg-black md:text-lg md:flex border items-center  gap-x-2 p-4 px-10 rounded-full border-gray-800 font-semibold leading-6 text-gray-900">
+          <button className="text-sm hidden bg-white group-hover:text-white group-hover:bg-gray-800 md:text-lg md:flex border items-center  gap-x-2 p-4 px-10 rounded-full border-gray-800 font-semibold leading-6 text-gray-900">
             <span>Let's talk </span>
             <span>
               {/*import { CgSmileMouthOpen } from "react-icons/cg";*/}
 
               <FaTeamspeak
                 strokeWidth={0.8}
-                className="text-gray-900 text-4xl group-hover:text-white"
+                className="text-gray-900 text-4xl  group-hover:text-white"
               />
             </span>
           </button>
 
           <button
             onClick={handleOpenMobileNav}
-            className=" bg-black !cursor-pointer group-hover:bg-white flex justify-center items-center group-hover:border group-hover:border-slate-600 rounded-full size-20"
+            className=" bg-gray-800 !cursor-pointer group-hover:bg-white flex justify-center items-center group-hover:border group-hover:border-slate-600 rounded-full size-20"
           >
             <RiMenu5Fill className="rotate-90 size-6 text-white group-hover:text-black font-bold bg-none " />
             {/* <Tally2 className="rotate-90 text-white" /> */}
@@ -134,11 +127,6 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
                 className=" bg-gray-100 !cursor-pointer flex justify-center items-center rounded-full size-20"
               >
-                {/* <button
-                type="button"
-              
-                className="-m-2.5 rounded-md p-2.5 text-gray-100"
-              > */}
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon
                   aria-hidden="true"
@@ -150,12 +138,14 @@ export default function Header() {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6 *:!cursor-pointer">
                   <a
+                    onClick={() => setMobileMenuOpen(false)}
                     href="#folio"
                     className="-mx-3 block rounded-lg px-3 py-2 md:py-3 !cursor-pointer text-base font-semibold leading-7  "
                   >
                     Experience
                   </a>
                   <a
+                    onClick={() => setMobileMenuOpen(false)}
                     href="#contact"
                     className="-mx-3 block rounded-lg px-3 py-2 md:py-3 text-base font-semibold leading-7  "
                   >

@@ -6,7 +6,7 @@ import { WordPullUp } from "./animated-components/pull-up-animate";
 function Hero() {
   return (
     <div className="px-10 flex jdustify-center lg:px-20  items-cen/ter flex-col !h-[100vh] overflow-hidden">
-      <main className="pt-[10rem] mb-[6rem]">
+      <main className="pt-[16rem] mb-[6rem]">
         {/* <motion.div
           variants={FadeinAnimation("down", 0.2)}
           initial="hidden"

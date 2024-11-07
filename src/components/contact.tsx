@@ -21,7 +21,7 @@ function Contact() {
 
             <a
               href="mailto:m.mail.com"
-              className=" text-3xl  group-hover:underline lg:!text-6xl font-bold"
+              className=" text-3xl  !cursor-pointer group-hover:underline lg:!text-6xl font-bold"
             >
               Let's Collaborate{" "}
             </a>

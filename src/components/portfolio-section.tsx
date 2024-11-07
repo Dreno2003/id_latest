@@ -16,7 +16,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
           <motion.div
             variants={FadeinAnimation("up", 0.1)}
             initial="hidden"
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.7 }}
             whileInView={"show"}
           >
             <h3 className="text-white text-3xl lg:text-4xl font-bold">
