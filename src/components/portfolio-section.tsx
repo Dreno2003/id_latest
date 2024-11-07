@@ -9,7 +9,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     <div
       id="folio"
       ref={ref}
-      className="px-10 h bg-black flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-12 overflow-hidden"
+      className="px-10 h bg-black flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-14 overflow-hidden"
     >
       <main>
         <div className="text-center mb-4">
@@ -31,31 +31,24 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
           </motion.div>
         </div>
 
-        {/* <Spotlight className="grid gap-2 grid-flow-col grid-cols-4">
-        <SpotLightItem> */}
         <div className="flex justify-center space-y-8 mt-10 flex-col items-center">
           {experiences.map((experience, index) => (
-            // <motion.div
-            //   variants={FadeinAnimation("up", 0.21)}
-            //   initial="hidden"
-            //   viewport={{ once: false, amount: 0.5 }}
-            //   whileHover={"show"}
-            // >
-            <PortfolioSectionCard
-              key={index}
-              title={experience.title}
-              description={experience.description}
-              date={experience.date}
-              stacks={experience.stacks}
-            />
-            // </motion.div>
+            <motion.div
+              variants={FadeinAnimation("up", 0.21)}
+              initial="hidden"
+              viewport={{ once: false, amount: 0.5 }}
+              whileHover={"show"}
+            >
+              <PortfolioSectionCard
+                key={index}
+                title={experience.title}
+                description={experience.description}
+                date={experience.date}
+                stacks={experience.stacks}
+              />
+            </motion.div>
           ))}
         </div>
-
-        <PortfolioSectionCard />
-        {/* </SpotLightItem>
-      </Spotlight> */}
-        {/* <SpotlightCard className="h-[10rem]">dzdfsfd</SpotlightCard> */}
       </main>
     </div>
   );
