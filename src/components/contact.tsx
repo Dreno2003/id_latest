@@ -15,18 +15,20 @@ function Contact() {
       >
         <main>
           <div className="text-center group">
-            <p className="text-gray-500 mt-2 md:text-lg lg:text-xl mb-1">
+            <p className="text-gray-500 group-hover: motion-preset-typewriter mt-2 md:text-lg lg:text-xl mb-1">
               Wanna build stuffs?{" "}
             </p>
 
             <a
               href="mailto:m.mail.com"
-              className=" text-3xl  !cursor-pointer group-hover:underline lg:!text-6xl font-bold"
+              className=" 
+ text-3xl group-hover:motion-preset-confetti  !cursor-pointer group-hover:underline lg:!text-6xl font-bold"
             >
               Let's Collaborate{" "}
             </a>
             <img
-              className="mx-auto mt-3 md:mt-6 lg:mt-20 w-max h-28 sm:h-36 md:h-44"
+              className="   motion-preset-seesaw 
+ mx-auto mt-3 md:mt-6 lg:mt-20 w-max h-28 sm:h-36 md:h-44"
               src={"../../public/36.png"}
               alt="let Collaborate"
             />
@@ -42,7 +44,7 @@ function Contact() {
       </div>
 
       <footer className="lg:px-20 p-6 px-8 sm:px-10 mt-8 flex justify-between">
-        <div className="!font-medium">
+        <div className="!font-medium motion-preset-typewriter-[18] motion-duration-2000 motion-rep">
           <span className="text-slate-500">© 2024</span> Idongesit Ntuk
         </div>
 
