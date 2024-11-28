@@ -36,7 +36,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
             <motion.div
               variants={FadeinAnimation("up", 0.21)}
               initial="hidden"
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               whileHover={"show"}
             >
               <PortfolioSectionCard
@@ -49,6 +49,8 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
             </motion.div>
           ))}
         </div>
+
+        {/* <button className="text-red-200 bg-white px-10 p-2 rounded-full py-3">Download CV</button> */}
       </main>
     </div>
   );

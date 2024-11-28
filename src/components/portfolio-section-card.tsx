@@ -33,7 +33,7 @@ function PortfolioSectionCard({
       <div
         onMouseMove={handleMouemove}
         ref={boxWrapper}
-        className={`group relative rounded-xl  bg-black    overflow-hidden w-fit mx-auto`}
+        className={`group relative rounded-xl  bg-black    overflow-hidden w mx-auto`}
       >
         <div
           className="pointer-events-none !cursor-pointer absolute opacity-0 z-50  rounded-lg w-full h-full group-hover:opacity-100  transition duration-300 "
@@ -58,7 +58,12 @@ function PortfolioSectionCard({
               <h3 className="font-semibold text-xl ">{title}</h3>
             </div>
             <p className="text-gray-500 !cursor-pointer text-sm capitalize my-2">
-              {description}
+              {/* {description} */}
+              <ol className="list-disc space-y-2">
+                {description?.map((value) => (
+                  <li>{value}</li>
+                ))}
+              </ol>
             </p>
             <footer className="flex items-center mt-3 md:mt-5 gap-x-3">
               {stacks?.map((stack) => (

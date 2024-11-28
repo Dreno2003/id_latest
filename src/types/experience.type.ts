@@ -1,6 +1,7 @@
 interface PortfolioSectionCardProps {
+  placeOfWork?:string
   title?: string;
-  description?: string;
+  description?: string[];
   date?: string;
   stacks?: string[];
 }
