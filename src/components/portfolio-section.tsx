@@ -4,7 +4,9 @@ import { experiences } from "../data/experiences.data";
 import { AnimatePresence, motion } from "framer-motion";
 import {DownloadIcon} from './animated-components/download_btn.tsx'
 import FadeinAnimation from "./animated-components/fadein-animation";
+import resume_docs from '../../public/_docs/Resume-2.pdf'
 import {  useAnimation } from 'motion/react';
+
 
 const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
   const controls = useAnimation();
@@ -20,7 +22,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     <motion.div
     variants={FadeinAnimation("up", 0.1)}
     initial="hidden"
-    viewport={{ once: false, amount: 0.7 }}
+    viewport={{ once: true, amount: 0.7 }}
     whileInView={"show"}
     >
     <h3 className="text-white text-3xl lg:text-4xl font-bold">
@@ -58,7 +60,10 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
 
     </main>
     <div className='flex justify-center  mt-32'>
-    <button type='button' className="text-white  flex  items-center  hovers:bg-white hover:tesxt-black font-normal ease-in-out duration-200  !cursor-pointer border px-8 p-2 bg-black  rounded-full py-3">
+
+      <a href={resume_docs} className="cursor-pointer" download={'Idongesit Ntuk'}>
+
+    <button type='button' className="text-white  flex   items-center  hovers:bg-white hover:tesxt-black font-normal ease-in-out duration-200  !cursor-pointer border px-8 p-2 bg-black  rounded-full py-3">
 
   {/*  //     onMouseEnter={() => controls.start('animate')}
     // onMouseLeave={() => controls.start('normal')}*/}
@@ -67,13 +72,14 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     controls={controls}
     onControlNormal ={() => controls.start('animate')}
     onControlAnimate ={() => controls.start('normal')}
-
-
+    
+    
     />
-    <span>
-    Download CV  
+    <span className="">
+    Download CV 
     </span>
     </button> 
+    </a>
     </div>
     </div>
     );

@@ -48,7 +48,7 @@ function PortfolioSectionCard({
       `,
     }}
     />
-    <div className="flex flex-col md:flex-row justify-between  flex-row  md:h-[18rem] w-full sm:w-[40rem] md:w-[45rem] p-8 ">
+    <div className="flex flex-col md:flex-row justify-between  flex-rsow  md:h-[18rem] w-full sm:w-[40rem] md:w-[45rem] p-8 ">
           {/* <div className="px-10 !cursor-pointer bg-black w-[] md:w-[50rem] text-gray-50 flex justify-center lg:px-20  items-cen/ter flex-col lg:flex-row  md:gap-x-8 py-8 overflow-hidden"> */}
           {/* <div> */}
     <h3 className="text-gray-500 mb-3 w-fit s:w-[20rem]  text-right ">

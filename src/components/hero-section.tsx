@@ -18,7 +18,7 @@ function Hero() {
         <motion.div
           variants={FadeinAnimation("right", 0.1)}
           initial="hidden"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           whileInView={"show"}
         >
           <WordPullUp
