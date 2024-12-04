@@ -1,9 +1,9 @@
-import HandShake from "../../public/36.png";
+// import HandShake from "../../public/36.png";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { RiGithubFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { WordPullUp } from "./animated-components/pull-up-animate";
+// import { WordPullUp } from "./animated-components/pull-up-animate";
 import { VelocityScroll } from "./animated-components/velocity-scoll";
 
 function Contact() {
@@ -11,7 +11,7 @@ function Contact() {
     <>
     <div
     id="contact"
-    className="px-10 h-[40dvh] lg:h-[80dvh] bg-white flex justify-center lgs:px-20  items-center flex-col  pys-10 md:pys-12 overflow-hidden"
+    className="px-10 min-h-[40dvh] lg:min-h-[80dvh] bg-white flex justify-center lgs:px-20  items-center flex-col  pys-10 md:pys-12 overflow-hidden"
     >
     <main>
     <div className="text-center group">

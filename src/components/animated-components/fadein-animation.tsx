@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 
-interface FadeinAnimationProps {
-  direction: string;
-  delay: number;
-}
+// interface FadeinAnimationProps {
+//   direction: string;
+//   delay: number;
+// }
 function FadeinAnimation(direction: string, delay: number) {
   return {
     hidden: {

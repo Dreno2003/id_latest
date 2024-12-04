@@ -14,7 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 function Main() {
   const cursorRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement>(null);
-  const traillerRef = useRef<HTMLDivElement>(null);
+  const traillerRef = useRef<any>(null);
   const [isInPortfolio, setIsInPortfolio] = React.useState(false); // State to track if cursor is in portfolio section
 
   React.useEffect(() => {

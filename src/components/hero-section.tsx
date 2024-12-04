@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+// import { useState } from "react";
+import {  motion } from "framer-motion";
 import FadeinAnimation from "./animated-components/fadein-animation";
 import { WordPullUp } from "./animated-components/pull-up-animate";
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import PortfolioSectionCard from "./portfolio-section-card";
 import { experiences } from "../data/experiences.data";
-import { AnimatePresence, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import {DownloadIcon} from './animated-components/download_btn.tsx'
 import FadeinAnimation from "./animated-components/fadein-animation";
 import resume_docs from '../../public/_docs/Resume-2.pdf'
