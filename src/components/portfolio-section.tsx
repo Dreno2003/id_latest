@@ -15,7 +15,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     <div
     id="folio"
     ref={ref}
-    className="px-10 h bg-black flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-24 overflow-hidden"
+    className="px-10 h bg-black border-t-8 border-gray-300 flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-24 overflow-hidden"
     >
     <main>
     <div className="text-center mb-4">
@@ -61,7 +61,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     </main>
     <div className='flex justify-center  mt-32'>
 
-      <a href={resume_docs} className="cursor-pointer" download={'Idongesit Ntuk'}>
+    <a href={resume_docs} className="cursor-pointer" download={'Idongesit Ntuk'}>
 
     <button type='button' className="text-white  flex   items-center  hovers:bg-white hover:tesxt-black font-normal ease-in-out duration-200  !cursor-pointer border px-8 p-2 bg-black  rounded-full py-3">
 
