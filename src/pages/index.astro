@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
 import Main from "../components/main";
+import { Image } from 'astro:assets';
+import handShake from "../../public/36.png";
 ---
 
 <Layout title="Idongesit Ntuk | Block Chain Developer.">
   <main>
-    <Main client:load />
+    <Main img={handShake} client:load />
 
     <!-- <AnimatedSection client:load /> -->
   </main>

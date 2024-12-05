@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 //     cursor.style.top = e.clientY + 'px';
 //   });
 
-function Main() {
+function Main({img}:{img:any}) {
   const cursorRef = useRef<HTMLDivElement | null>(null);
   const portfolioRef = useRef<HTMLDivElement>(null);
   const traillerRef = useRef<any>(null);
@@ -82,7 +82,7 @@ function Main() {
         <div ref={portfolioRef}>
           <PortfolioSection />
         </div>
-        <Contact />
+        <Contact img={img} />
         {/* <div
         ref={cursorRef}
         className={clsx(
