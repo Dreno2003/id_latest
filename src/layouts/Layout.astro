@@ -35,16 +35,17 @@ const { title } = Astro.props;
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:image" content={'../../id.png'} />
+    <meta property="og:image" content={'../../public/id.png'} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
-    <meta property="twitter:image" content={'../../id.png'} />
+    <meta property="twitter:image" content={'../../public/id.png'} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
+    <!-- <img src="../../public/id.png" /> -->
     <slot />
   </body>
 </html>
