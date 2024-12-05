@@ -1,4 +1,3 @@
-import { Image } from "astro:assets";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { RiGithubFill } from "react-icons/ri";
 import { FaXTwitter } from "react-icons/fa6";
@@ -6,7 +5,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 // import { WordPullUp } from "./animated-components/pull-up-animate";
 import { VelocityScroll } from "./animated-components/velocity-scoll";
 
-function Contact({ img }: { img: any }) {
+function Contact({ }: { img?: any }) {
   // const imagePath = "../../public/36.png";
   // const myImage = import(imagePath);
   return (

@@ -153,3 +153,29 @@ html {
     transform: rotate(360deg);
   }
 }
+
+
+/* custom scroll bar */
+.sidebar {
+  @apply 
+    fixed 
+    top-0 
+    left-0 
+    h-full 
+    w-64 
+    bg-gray-100 
+    shadow-lg 
+    transition-all 
+    duration-300 
+    ease-in-out;
+}
+
+.sidebar-item {
+  @apply 
+    px-4 
+    py-2 
+    hover:bg-gray-200 
+    cursor-pointer 
+    transition 
+    duration-200;
+}
