@@ -1,4 +1,3 @@
-import handShake from "../../public/36.png";
 import { Image } from "astro:assets";
 import { FaRegEnvelope } from "react-icons/fa6";
 import { RiGithubFill } from "react-icons/ri";

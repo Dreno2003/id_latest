@@ -83,14 +83,7 @@ function Main({img}:{img:any}) {
           <PortfolioSection />
         </div>
         <Contact img={img} />
-        {/* <div
-        ref={cursorRef}
-        className={clsx(
-          "custom-cursor shadow-md",
-          isInPortfolio && "!bg-white "
-        )}
-      ></div>
-      <div ref={traillerRef} className="cursor-trailer"></div> */}
+       
       </motion.div>
     </AnimatePresence>
   );
