@@ -2,7 +2,7 @@
 interface Props {
   title: string;
 }
-import image from "../../public/id.png";
+import image from "../../id.png";
 const { title } = Astro.props;
 ---
 
@@ -15,9 +15,9 @@ const { title } = Astro.props;
       content="I am Idongesit Ntuk a senior block chain developer based in Nigeria"
     />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="../../public/fav/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../../fav/favicon.ico" />
 
-    <link rel="apple-touch-icon" href="../../public/fav/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="../../fav/apple-touch-icon.png" />
 
     <link
       rel="icon"
@@ -29,18 +29,18 @@ const { title } = Astro.props;
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../../public/fav/favicon-16x16.png"
+      href="../../fav/favicon-16x16.png"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={'../../id.png'} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
-    <meta property="twitter:image" content={image} />
+    <meta property="twitter:image" content={'../../id.png'} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
