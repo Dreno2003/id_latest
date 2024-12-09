@@ -15,7 +15,7 @@ const PortfolioSection = React.forwardRef<HTMLDivElement>((_, ref) => {
     <div
     id="folio"
     ref={ref}
-    className="px-10 h bg-black border-t-8 border-gray-300 flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-24 overflow-hidden"
+    className="px-10 h bg-black  flex justify-center lg:px-20  items-cen/ter flex-col  py-10 md:py-24 overflow-hidden"
     >
     <main>
     <div className="text-center mb-4">

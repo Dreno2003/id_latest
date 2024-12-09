@@ -5,7 +5,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 // import { WordPullUp } from "./animated-components/pull-up-animate";
 import { VelocityScroll } from "./animated-components/velocity-scoll";
 
-function Contact({ }: { img?: any }) {
+function Contact({}: { img?: any }) {
   // const imagePath = "../../public/36.png";
   // const myImage = import(imagePath);
   return (
@@ -29,7 +29,7 @@ function Contact({ }: { img?: any }) {
             </a>
             <img
               className="   motion-preset-seesaw 
-    mx-auto mt-3 md:mt-6 lg:mt-20 w-max h-28 sm:h-36 md:h-44"
+    mx-auto mt-3 md:mt-6 lg:mt-20  w-[10rem] h-32 md:w-[12rem] sm:h-36 md:h-44"
               src={"../../36.png"}
               // src={handShake as any}
               alt="let Collaborate"
@@ -37,7 +37,7 @@ function Contact({ }: { img?: any }) {
           </div>
         </main>
       </div>
-      <div className=" flex -mt-10 ">
+      <div className=" flex -mt-8 ">
         <VelocityScroll
           text="I Build Researched Based Project That The Market Needs."
           default_velocity={4}
@@ -46,30 +46,32 @@ function Contact({ }: { img?: any }) {
       </div>
 
       <footer className="lg:px-20 p-6 px-8 sm:px-10 mt-8 flex justify-between">
-        <div className="!font-medium motion-preset-typewriter-[18] motion-duration-10000 motion-rep">
+        <div className="!font-medium motion-preset-typewriter-[19] motion-duration-10000 motion-rep">
           <span className="text-slate-500">© 2024</span> Idongesit Ntuk
         </div>
 
-        <div>
-          <div className="flex flex-row gap-x-2 items-center :*!cursor-pointer  :*:size-7 *:text-gray-600  md:gap-x-4 lg:gap-x-6 xl:gap-x-7 ">
-            <a href="" target="_blank" className="!cursor-pointer">
-              {" "}
-              <FaRegEnvelope className="hover:text-red-700 size-5 cursor-pointer" />
-            </a>
-            <a href="https://github.com/idlatest" target="blank">
-              {" "}
-              <RiGithubFill className="cursor-pointer size-5 hover:text-gray-900 " />{" "}
-            </a>
+        {/* <div> */}
+        <div className="flex flex-row gap-x-2 items-center   :*:size-7 *:text-gray-600  md:gap-x-4 lg:gap-x-6 xl:gap-x-7 ">
+          <a href="" target="_blank" className="!cursor-pointer">
+            <FaRegEnvelope className="hover:text-red-700 size-5 cursor-pointer" />
+          </a>
+          <a href="https://github.com/idlatest" target="blank">
+            <RiGithubFill className="cursor-pointer size-5 hover:text-gray-900 " />{" "}
+          </a>
 
-            <a href="https://x.com/idlatest" target="_blank">
-              <FaXTwitter className="cursor-pointer  size-5 hover:text-gray-900" />
-            </a>
-            <a href="https://www.linkedin.com/in/idlatest/" target="_blank">
-              {" "}
-              <IoLogoLinkedin className="hover:text-blue-700 size-5 cursor-pointer" />
-            </a>
-          </div>
+          <a
+            href="https://x.com/idlatest"
+            target="_blank"
+            className="cursor-wait"
+          >
+            <FaXTwitter className="cursor-pointer  size-5 hover:text-gray-900" />
+          </a>
+          <a href="https://www.linkedin.com/in/idlatest/" target="_blank">
+            {" "}
+            <IoLogoLinkedin className="hover:text-blue-700 size-5 cursor-pointer" />
+          </a>
         </div>
+        {/* </div> */}
       </footer>
     </>
   );
